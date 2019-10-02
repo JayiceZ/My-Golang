@@ -34,6 +34,10 @@ func Login(w http.ResponseWriter,r *http.Request){
 		//载入界面
 		t,_:=template.ParseFiles("./src/view/login.html")
 		t.Execute(w,nil)
+		//这个方法也可以
+		//f,_:=os.Open("./src/view/login.html")
+		//io.Copy(w,f)
+		//f.Close()
 	}else if m=="POST"{
 		fmt.Println(r.Form["username"])
 		fmt.Println(r.Form["password"])  //[123]
