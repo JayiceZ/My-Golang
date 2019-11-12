@@ -10,5 +10,5 @@ func main(){
 	u,_:=url.Parse(str)
 	res,_:=url.ParseQuery(u.RawQuery)
 	fmt.Println(res.Get("id")) //1
-	fmt.Println(res.Get("name")) //jay
+	fmt.Println(res.Get("name")) ///jay 
 }
